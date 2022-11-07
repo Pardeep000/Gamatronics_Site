@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_purpose</title>
+
+</head>
+<body>
+
+<script>
+ let i=0;
+ function f_up(){
+     i++;
+     document.querySelector('.change').innerHTML=i;
+ }
+//
+function f_down(){
+    i--;
+    document.querySelector('.change').innerHTML=i;
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+    document.querySelector('.up').onclick=f_up;
+});
+//
+document.addEventListener('DOMContentLoaded',function(){
+    document.querySelector('.down').onclick=f_down;
+});
+</script>
+
+
+<p class = "change">0</p>
+<button class="up">UP</button>
+<button class="down">DOWN</button>
+
+</body>
+</html>

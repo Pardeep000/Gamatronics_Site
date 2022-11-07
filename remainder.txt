@@ -1,0 +1,26 @@
+sending resume there to ncbc
+
+
+
+making chat with us section 
+footer is necessary
+fix-minimu height thing
+
+think about background of section-3
+
+quick links and contact us at the footer...
+at the footer...copyright rights reserved...
+
+
+border-color in hover:
+display:flex
+align items
+justify content
+min height
+
+box shadow
+
+
+
+input box: first text not leaving if haas been written new text...
+

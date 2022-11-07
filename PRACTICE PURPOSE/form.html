@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_purpose</title>
+
+</head>
+<body>
+
+<script>
+
+document.addEventListener('DOMContentLoaded',function(){
+    document.querySelector('form').onsubmit=function(){
+        let name = document.querySelector('#name');
+        alert(`Hello  = ${name.value}`)
+    }
+})
+
+
+</script>
+
+<form action="">
+<input type="text" id="name" placeholder="Enter your name">
+<input type="submit">
+
+</form>
+
+
+</body>
+</html>

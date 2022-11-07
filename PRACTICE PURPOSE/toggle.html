@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_purpose</title>
+
+</head>
+<body>
+
+<script>
+    function toggle(){
+if(document.getElementById('toggle').innerHTML=='UP')
+document.getElementById('toggle').innerHTML='DOWN';
+else document.getElementById('toggle').innerHTML='UP';
+    }
+
+//fuinction for toggling in the most effective way...
+    function new_func(){
+        let data = document.getElementById('left_right_toggle');
+        if(data.innerHTML==='LEFT') data.innerHTML = 'RIGHT';
+        else data.innerHTML = 'LEFT';
+    }
+</script>
+
+<p id="toggle">UP</p>
+<button onclick="toggle()">toggle</button>
+
+
+<!--TOGGLE IN MOST EFFECTIVE WAY-->
+
+<p id="left_right_toggle">LEFT</p>
+<button onclick='new_func()'>left_right_toggle</button>
+
+</body>
+</html>

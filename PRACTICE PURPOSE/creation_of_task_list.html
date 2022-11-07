@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_purpose</title>
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+
+document.querySelector('.submit').disabled=true;
+document.querySelector('.name').onkeyup=function(){
+    document.querySelector('.submit').disabled=false;
+if(document.querySelector('.name').value.length>0) document.querySelector('.submit').disabled=false;
+else document.querySelector('.submit').disabled=true;
+}
+
+//checking if content is there in the input field or not...:\n
+
+
+        document.querySelector('form').onsubmit=function(){
+            let task_name = document.querySelector('.name').value;
+            let new_task = document.createElement('li');
+            new_task.innerHTML=task_name;
+            document.querySelector('.task_list').append(new_task);
+            //after clicking on submit button
+            document.querySelector('.name').value='';
+            document.querySelector('.submit').disabled=true;
+            return false;
+        }
+    })
+</script>
+
+<form action="">
+    <input type="text" class='name' placeholder='task_name'>
+    <input type="submit" class='submit'>
+</form>
+<ul class="task_list">
+
+</ul>
+</body>
+</html>

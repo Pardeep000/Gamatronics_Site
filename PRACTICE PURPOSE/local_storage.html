@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(!localStorage.getItem('value')){
+            localStorage.setItem('value',0);
+        }
+        //
+        document.addEventListener('DOMContentLoaded',function(){
+            document.querySelector('.count').onclick=function(){
+                var i=localStorage.getItem('value');
+                i++;
+                document.querySelector('.no').innerHTML=i;
+                localStorage.setItem('value',i);
+            }
+            //
+            document.querySelector('.no').innerHTML=localStorage.getItem('value');
+
+        })
+    </script>
+    <button class="count">COUNT</button>
+    <p class="no"></p>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_purpose</title>
+
+</head>
+<body>
+
+<script>
+    let i=0;
+    
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('.bigger').onclick=function(){
+            i+=5;
+            document.querySelector('.head').style.fontSize=`${i}px`;
+        }
+    })
+
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('.smaller').onclick=function(){
+            i-=5;
+            document.querySelector('.head').style.fontSize=`${i}px`;
+        }
+    })
+
+</script>
+
+
+    <h1 class="head">HELLO</h1>
+    <p>Front_color:</p>
+    <button class="bigger">Bigger</button>
+    <button class="smaller">Small</button>
+</body>
+</html>

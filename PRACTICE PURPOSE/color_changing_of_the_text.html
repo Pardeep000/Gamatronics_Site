@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice_purpose</title>
+
+</head>
+<body>
+
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('.red').onclick=function(){
+            document.querySelector('.head').style.color='red';
+        }
+    })
+
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('.green').onclick=function(){
+            document.querySelector('.head').style.color='green';
+        }
+    })
+
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('.blue').onclick=function(){
+            document.querySelector('.head').style.color='blue';
+        }
+    })
+
+
+    ///
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('.redd').onclick=function(){
+            document.querySelector('.head').style.backgroundColor='red';
+        }
+    })
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('.bluee').onclick=function(){
+            document.querySelector('.head').style.backgroundColor='blue';
+        }
+    })
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('.greenn').onclick=function(){
+            document.querySelector('.head').style.backgroundColor='green';
+        }
+    })
+</script>
+
+
+    <h1 class="head">HELLO</h1>
+    <p>Front_color:</p>
+    <button class="red">RED</button>
+    <button class="green">GREEN</button>
+    <button class="blue">BLUE</button>
+    <p>Background_color:</p>
+    <button class="redd">RED</button>
+    <button class="greenn">GREEN</button>
+    <button class="bluee">BLUE</button>
+</body>
+</html>

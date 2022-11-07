@@ -1,0 +1,25 @@
+form and email validation using javascript in saurabh shukla or some other video...
+
+Function having same name as alert for alert event won’t work out…
+
+alert on click on button
+counter on clicking on button
+
+document.getelementsby sth  = document.querySelector();
+
+
+1) querySelector in place of getElements
+2) function inside of button or outside
+3) toggle by if else
+
+form.onsubmit
+button.onclick
+select.onchange
+
+onmouseover
+onmouseout
+
+university-scholarships
+firebase
+FYP idea
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--LINK_FOR_ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="pics/logo.PNG" >
+    <link rel="stylesheet" href="index_style.css">
+
+
+    <title>Gamma-Tronics</title>
+
+<script>
+  function f1(){
+    var e=document.getElementsByClassName('btn1_text')[0];
+    e.innerHTML="Fusing hardware with softwares designed to come up with the sophisticated projects that allows one to function on one's own terms... ";}
+  //
+  function f2(){
+    var e=document.getElementsByClassName('btn1_text')[0];
+    e.innerHTML='';}
+  //
+  function f3(){
+    var e=document.getElementsByClassName('btn2_text')[0];
+    e.innerHTML="Desgining simple to sophisticated circuits that are having more demand at the custom and industrial level...";}
+  //
+  function f4(){
+    var e=document.getElementsByClassName('btn2_text')[0];
+    e.innerHTML='';}
+  
+</script>
+
+
+
+</head>
+<body>
+    <nav class="nav_bar">
+        <div class="logo"><img src="pics/logo.PNG" alt=""></div>
+
+        <ul class="nav-elements">
+            <li><a href='#sec1'>HOME</a></li>
+            <li><a href='#sec2'>ABOUT</a></li>
+            <li><a href='#sec3'>SERVICES</a></li>
+            <li><a href=''>PRODUCTS</a></li>
+            <li><a href='#sec4'>CONTACT</a></li>
+        </ul>
+        
+        <a href="javascript:void(0);" class="toggle_btn" onclick="myFunction()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        
+    </nav>
+
+
+    <script>
+        function myFunction() {
+          //var x = document.getElementById("myLinks");
+          var x = document.getElementsByClassName("nav-elements")[0];
+          var y = document.getElementsByClassName("sec1")[0];
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.marginTop='0%';
+          } else {
+            x.style.display = "block";
+            y.style.marginTop='80%';
+          }
+        }
+        //window.onresize = function(){ location.reload(); }
+        </script>
+
+      
+      
+        <section class="sec1" id='sec1'>
+          <div class="wrapper">
+              <div class="static-txt">Entrepreneurship with:</div>
+              <ul class="dynamic-txts">
+                <li><span>Innovation</span></li>
+                <li><span>Design</span></li>
+                <li><span>Creation</span></li>
+                <li><span>Real-time Solutions</span></li>
+              </ul>
+            </div>
+      
+            <div class="msg_on_page">We believe in bringing real time solutions to the society and<br> pushing it in positive direction and build so others can build and relive...</div>
+            <a href='https://www.facebook.com/GammaTronic-Solutions-105645988397534' target="_blank" title='go-to-gammaTronics-facebook page'><button class="btn_on_page">Connect with facebook</button></a>
+      </section>
+
+
+<section class="sec2" id='sec2'>
+    
+  <div class="head_text2">OUR VISION</div>
+  <div class="typing_text">BRINGING REAL TIME SOLUTIONS<span class="change_in_css"> AND MEETING THE <br>UNMET AND UNARTICULATED NEEDS</span> OF THE CUSTOMER...</div>
+
+  <p class="little_text">We are about...</p><br> 
+  <div class="part2">
+
+    <div class="btn1_area"><button class="btn1" onmouseover='f1()' onmouseout='f2()'>Embedded-Systems</button>
+    <p class="btn1_text"></p>
+    </div>
+    <div class="btn2_area"><button class="btn2" onmouseover='f3()' onmouseout='f4()'>Electronic-Projects</button>
+    <p class="btn2_text"></p>
+    </div>
+
+  </div>
+    <div class="part3">
+  <div class="pic_on_page">
+<img src="pics/rotator.PNG" class="rotate">
+<img src="pics/lander.PNG" class="lander">
+  </div><!--pic_on_page-ending-->
+
+<div class="text-part">
+  We, the team of engineers and to be ones believes in pushing the society forward by building products that makes lives of people easier, secure and more reliable in different areas which is the ultimate key to promote national industries and make digital Pakistan.<br><br>
+  Going along the way, we provide services at the custom levels by getting insights of the user’s needs and providing them with the best user experience. It’s all about making not one time but all time relationships with the customers.
+</div>
+
+
+    </div><!--part3-ending-->
+
+</section><!--section-02-ending...-->
+
+
+
+
+<section class="sec3" id='sec3'>
+  <p class="head_text3">SERVICES</p>
+
+  <div class="layer1">
+    <img src="pics/s1.png" class='img'>
+    <img src="pics/s2.png" class='img'>
+  </div>
+  <div class="layer2">
+    <img src="pics/s3.jpg" class='img'>
+    <img src="pics/s4.png" class='img'>
+  </div>
+  <div class="layer3">
+    <img src="pics/s5.jpg" class='img'>
+    <img src="pics/s6.png" class='img'>
+  </div>
+  <div class="layer4">
+    <img src="pics/s7.jpg" class='img'>
+    <img src="pics/s8.png" class='img'>
+  </div>
+</section>
+
+
+
+<section class="sec4" id='sec4'>
+  <p class="head_text4">CONNECT WITH US</p>
+  <p class="head_text4_2">We'll get back to you very shortly...</p>
+
+  <form action="https://formsubmit.co/gamatronics501@gmail.com" method="POST" class="contact_form">
+   <!--ROW_1-->
+    <div class="row_line">
+        <div class="container">
+          <input type="text" id="fname" name="fname"  required='required'>
+          <label>First Name: </label>
+        </div>
+
+    
+        <div class="container">
+          <input type="text" id="lname" name="lname" required='required'>
+          <label>Last Name: </label>
+        </div>
+    </div>
+
+  <!--ROW-2-->
+    <div class="row_line">
+        <div class="container">
+          <input type="text" id="contact_no" name="contact_no" required='required'>
+          <label>Contact no: </label>
+        </div>
+  
+        <div class="container">
+          <input type="email" id="email_address" name="email_address" required='required'>
+          <label>Email-address: </label>
+        </div>
+    </div>
+    
+  <!--ROW-3-->
+  <label for="" class='textarea_top'>Type your message: </label><br>
+  <textarea cols="129" rows="5" id="message" name="message" class='textarea_itself'></textarea><br>
+  
+  
+  <button type='submit' class="submit">Send message <i class="fa fa-paper-plane-o"></i></button>
+
+  </div>
+
+  </form>
+
+
+<p class="bottom_text">Drop us a line...</p>
+
+<div class="contact_content">
+  <div class="contact_no"><i class="fa fa-phone" style="font-size: 30px;"></i><span>+92-300 9296859</span></div>
+  <div class="email_address"><i class="fa fa-envelope" style="font-size: 30px;color:red;"></i><span>gamatronics501@gmail.com</span></div>
+  <div class="fb"><a href="https://www.facebook.com/GammaTronic-Solutions-105645988397534" target="_blank"><i class="fa fa-facebook" style="font-size: 30px;"></i><span>www.facebook.com/GammaTronic-Solutions</span></a></div>
+</div>
+
+
+</section>
+
+
+
+</body>
+</html>

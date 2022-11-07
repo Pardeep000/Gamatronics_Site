@@ -1,0 +1,1118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+    scroll-behavior: smooth;
+}
+
+
+.nav_bar{
+    width: 100%;
+    height: 60px;
+    background-color: blue;
+
+    display: flex;
+
+    line-height: 60px;
+
+    z-index: 100;
+    top: 0%;
+    position: sticky;
+}
+
+.logo{
+    width: 10%;
+    height: 60px;
+    
+    text-align: center;
+}
+.logo img{
+    width: 60px;
+}
+
+.nav-elements{
+    width: 90%;
+    height: 60px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    list-style-type: none;
+    display: flex;
+
+    padding-left: 220px;
+
+}
+
+.nav-elements li{
+    padding: 0px 20px;
+}
+
+.nav-elements li a{
+    text-decoration: none;
+    color: white;
+
+    border: 3px solid blue;
+    border-radius: 25px;
+    padding: 1px 20px;
+}
+
+.nav-elements li a:hover{
+    cursor: pointer;
+    color: blue;
+    background-color: white;
+    border: 3px solid red;
+    border-radius: 25px;
+    padding: 1px 20px;
+}
+
+
+#check{
+    margin-top: 28.5px;
+}
+
+.check_btn{
+    
+    display: none;
+    z-index: 200;
+    
+}
+
+
+
+
+
+
+
+
+.toggle_btn{
+    position: absolute;
+    top: 1.75rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: red;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper{
+    display: flex;
+    padding-top: 20%;
+  }
+  .wrapper .static-txt{
+    margin-top: -30px;
+    margin-left: 225px;
+
+    color: red;
+    font-size: 35px;
+    font-weight: 400;
+
+    font-style: italic;
+  }
+  .wrapper .dynamic-txts{
+    margin-top: -50px;
+
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: blue;
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    opacity: 0.7;
+    top: 2px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #343F4F;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+
+
+
+
+
+  .sec1{
+    min-height: 177vh;
+    /*min-height: 50vh;*/
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pics/bg.jpg');
+    background-repeat: no-repeat;    
+    background-size: cover;
+
+  }
+
+
+
+  .msg_on_page{
+      padding: 2px;
+      color: white;
+      padding-left: 227px;
+  }
+
+
+
+  .btn_on_page{
+      background: none;
+      color: red;
+      font-size: 25px;
+      padding: 0px 15px;
+      border-radius: 25px;
+
+      margin-left: 220px;
+    margin-top: 20px;
+  }
+
+  .btn_on_page:hover{
+      color: blue;
+      background-color: white;
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec2{
+    /*min-height: 50vh;*/
+    min-height: 120vh;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pics/bg2.jpg');
+    background-repeat: no-repeat;    
+    background-size: cover;
+
+}
+
+
+.head_text2{
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+
+    margin-bottom: 15px;
+    
+    color: white;
+
+    position: relative;
+  animation: moving 5s 250;
+}
+
+@keyframes moving {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 600px; top: 0px;}
+  }
+
+
+
+.part2{
+    display: flex;
+}
+
+.little_text{
+    padding-top: 25px;
+
+    font-size: 20px;
+    font-style: italic;
+    color: red;
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.typing_text {
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+
+    color: white;
+
+    max-width: max-content;
+    overflow: hidden; 
+    border-right: .05em solid #464545; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0; /* Gives that scrolling effect as the typing happens */
+
+    padding-left: 25%;
+
+  }
+  
+  .typing_text {
+    animation: 
+      4s typing-erase 4s steps(50, end) infinite,
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The type and erase effect */
+  @keyframes typing-erase {
+    0% { width: 0 }
+    80% { width: 100% }
+    90%, 100% { width: 0 }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: gray }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.btn1_area, .btn2_area{
+    width: 50%;
+    text-align: center;
+    background-color: none;
+    height: 20vh;
+}
+
+.btn1, .btn2{
+    width: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid red;
+    border-radius: 25px;
+
+    color: white;
+    background: none;
+
+}
+
+.btn1_text, .btn2_text{
+    font-weight: bold;
+    color: white;
+}
+
+.btn1:hover, .btn2:hover{
+    color: red;
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.part3{
+    display: flex;
+    padding-top: 100px;
+}
+
+
+.pic_on_page{
+    margin-left: 190px;
+
+    width: 20%;
+    flex-direction: column;
+}
+
+.lander{
+    border-radius: 25px;
+}
+
+.rotate {
+    border-radius: 250px;
+    margin-left: 60px;
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+.text-part{
+    width: 80%;
+    color: white;
+    padding-left: 100px;
+    padding-right: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec3{
+    min-height: 120vh;    
+}
+
+.head_text3{
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+
+    background-color: grey;
+    margin-bottom: 5px;
+}
+
+.img{
+    width: 25%;
+    margin-left: 17%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec4{
+    min-height: 100vh;  
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('pics/bg3.jpg');
+    background-repeat: no-repeat;    
+    background-size: cover;
+    
+}
+
+
+.contact_form{
+  
+  
+  transform: translate(22%,20px);
+  
+}
+
+.container{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  height: 40px;
+  width: 26%;
+  position: relative;
+  border-radius: 10px;
+
+  margin-right: 90px;
+  margin-bottom: 35px;
+
+  border-radius: 25px;
+}
+
+.container input{
+  width: 100%;
+  
+  box-sizing: border-box;
+  padding: 12px 20px;
+
+  border: 1px solid red;
+
+  border-radius: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.2s;
+  outline: none;
+
+  height: 100%;
+  width: 100%;
+  border: none; 
+}
+
+
+
+
+
+
+.container label{
+  position: absolute;
+  bottom: 9px;
+  left: 15px;
+
+  color: grey;
+  font-size: 15px;
+
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+  
+
+
+  input:focus {
+    border: 2px solid blue;
+    border-radius: 25px
+      
+  }
+
+  
+  
+  .container input:focus ~ label{
+    transform: translateY(-32px);
+    font-weight: bold;
+    font-size: 20px;  
+    color: white;   
+  }
+
+
+
+
+
+input:valid~label{
+  transform: translateY(-32px);
+    font-weight: bold;
+    font-size: 20px;  
+    color: black;
+}
+
+
+
+
+
+.row_line{
+  display: flex;
+  width: 100%;
+}
+
+
+
+
+
+.textarea_top{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+}
+
+.textarea_itself{
+  resize: none;
+  caret-color: red;
+}
+
+
+
+
+
+.submit{
+  border-radius: 25px;
+    padding: 5px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid red;
+
+    margin-top: 8px;
+    transform: translateX(125%);
+}
+
+.submit:hover{
+  color: white;
+  background-color: blue;
+}
+
+
+
+
+.head_text4{
+  text-shadow: 2px 5px 3px red;
+    font-size: 35px;
+    font-weight: bold;
+  text-align: center;
+
+  color: white;
+  padding-bottom: 10px;
+}
+
+.head_text4_2{
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+    text-align: center;
+
+    color: white;
+    padding-bottom: 20px;
+}
+
+
+
+
+.bottom_text{
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 27px;
+
+  max-width: max-content;
+  overflow: hidden; 
+  border-right: .05em solid #464545; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
+
+  margin-top: 50px;
+
+  color: white;
+}
+
+.bottom_text{
+  animation: 
+    4s typing-erase 4s steps(50, end) infinite,
+    blink-caret .5s step-end infinite;
+}
+
+
+.contact_content{
+  display: flex;
+  min-height: 9vh;
+  background-color: grey;
+
+  padding-top: 15px;
+}
+
+.contact_no , .email_address{
+  width: 30%;
+  font-size: 20px;
+}
+
+
+
+
+.fb{
+  width: 40%;
+  font-size: 20px;
+}
+
+.contact_no span , .email_address span , .fb span{
+  padding-left: 10px;
+}
+
+.fb span{
+  color: black;
+}
+
+
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 5%;
+  padding-left: 10px;
+}
+
+.fa-phone{
+  border: 2px solid red;
+  border-radius: 29px;
+    padding-left: 5px;
+    width: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:952px) {
+.nav_bar{
+    flex-direction: column;
+    /*align-items: flex-start;*/
+    
+}
+
+.nav-elements{
+    display: none;
+    width: 100%;
+
+    
+}
+
+.nav-elements{
+    flex-direction: column;
+    width: 100%;
+    background-color: lightblue;
+    height: 56vh;
+}
+
+.nav-elements li{
+  transform: translateX(-30%);
+    
+}
+
+
+.nav-elements li a{
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid black;
+    color: black;
+
+}
+
+
+
+.nav-elements.active{
+    display: flex;
+}
+
+.toggle_btn{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec1{
+    background-position: 87%;
+    width: 100%;
+  }
+
+
+  .wrapper .static-txt{
+    margin-top: 20px;
+    margin-left: 225px;
+  }
+
+
+  .wrapper .dynamic-txts{
+    margin-top: 55%;
+    margin-left: -290px;
+  }
+
+
+  .btn_on_page{
+    margin-left: 50px;
+  }
+
+.msg_on_page{
+    padding-left: 50px;
+}
+.wrapper .static-txt{
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec2{
+  background-position: 87%;
+    width: 100%;
+
+}
+
+
+@keyframes moving {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 100px; top: 0px;}
+}
+
+
+.typing_text {
+
+  font-size: 15px;
+
+  padding-left: 0;
+
+}
+
+.typing_text {
+  animation: 
+    2.5s typing-erase 4s steps(50, end) infinite,
+    blink-caret .5s step-end infinite;
+}
+
+.change_in_css::after{
+  content: "\a";
+  white-space: pre;
+}
+
+
+.little_text{
+  font-size: 23px;
+  margin-left: 5px;
+}
+
+
+
+
+.btn1, .btn2{
+  width: 80%;
+    font-size: 20px;
+    
+    border: 2px solid red;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.part3{
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+
+
+.pic_on_page{
+  margin-left: 65px;
+}
+
+
+.text-part{
+  width: 70%;
+  padding-left: 65px;
+  padding-right: 70px;/*have not used it yet*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.head_text3{
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.img{
+  width: 75%;
+  margin-left: 12%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec4{
+  
+  width: 100%;
+
+}
+
+
+
+
+.contact_form{
+  
+  
+  transform: translate(18%,20px);
+  
+}
+
+.container{
+  width: 40%;
+}
+
+
+
+.container input{
+
+
+  width: 160%;
+
+}
+
+
+.container label{
+  
+  bottom: 10px;
+  right: -35px;
+
+}
+
+
+
+.row_line{
+flex-direction: column;
+  width: 100%;
+}
+
+
+
+
+.textarea_itself{
+  width: 63%;
+}
+
+.submit{
+
+  transform: translateX(2%);
+}
+
+
+
+
+.contact_content{
+  flex-direction: column;
+}
+
+
+
+.contact_no , .email_address , .fb{
+  width: 100%;
+  padding-bottom: 36px;
+}
+
+
+
+.contact_no span , .email_address span{
+  padding-left: 20px;
+}
+.fb span{
+  padding-left: 0px;
+}
+
+
+
+
+}/*end of media_query*/
